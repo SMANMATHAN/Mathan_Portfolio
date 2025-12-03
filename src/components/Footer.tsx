@@ -1,5 +1,6 @@
 import React from 'react';
 import { Heart, ArrowUp } from 'lucide-react';
+import MsLogo from '../assests/images/MSLogo-artguru.png';
 
 const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -12,6 +13,13 @@ const Footer: React.FC = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div className="space-y-4">
+          <div className="h-[70px] w-[70px] rounded-2xl overflow-hidden bg-slate-900 flex items-center justify-center shadow-md border-[1.5px] border-gray-700">
+                <img
+                  src={MsLogo}
+                  alt="MS logo"
+                  className="h-full w-full object-cover"
+                />
+              </div>
             <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               MANMATHAN S
             </h3>

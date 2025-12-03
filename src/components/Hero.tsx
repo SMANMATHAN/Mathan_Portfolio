@@ -6,7 +6,7 @@ import DirectEyeContact from '../assests/images/EyeContactOnLap.png';
 const Hero: React.FC = () => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const phrases = ['Software Engineer', 'Full Stack Developer', 'Problem Solver', '3× Hackathon Winner'];
+  const phrases = ['Software Engineer', 'Full Stack Developer', 'Problem Solver', ''];
 
   useEffect(() => {
     const currentPhrase = phrases[currentIndex];
@@ -46,43 +46,54 @@ const Hero: React.FC = () => {
   };
 
   return (
-     <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 text-white">
+    <section
+      id="home"
+      className="relative overflow-hidden bg-gradient-to-br from-slate-100 via-slate-50 to-slate-100 text-gray-900 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900 dark:text-white"
+    >
       <div className="absolute inset-0">
         <div className="absolute -top-40 -left-32 h-64 w-64 rounded-full bg-blue-500/20 blur-3xl"></div>
         <div className="absolute top-1/3 right-10 h-72 w-72 rounded-full bg-purple-500/20 blur-3xl"></div>
-        <div className="absolute bottom-10 left-1/4 h-56 w-56 rounded-full bg-sky-500/20 blur-3xl"></div>
+        <div className="absolute bottom-20 left-1/4 h-56 w-56 rounded-full bg-sky-500/20 blur-3xl"></div>
         <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(148,163,184,0.12) 1px, transparent 0)' }}></div>
       </div>
 
       <div className="relative mx-auto flex w-full max-w-6xl flex-col-reverse gap-14 px-6 py-20 lg:flex-row lg:items-center lg:justify-between">
         <div className="w-full space-y-10 lg:w-[56%]">
           <div className="space-y-5">
-            <h1 className="text-3xl font-bold leading-tight sm:text-5xl lg:text-6xl">
+            <h1 className="text-3xl font-bold leading-tight sm:text-5xl lg:text-6xl text-gray-900 dark:text-white">
               Hi, I'm <span className="bg-gradient-to-r from-sky-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">MANMATHAN S</span>
             </h1>
-            <div className="flex items-center gap-2 text-xl font-semibold text-slate-200 sm:text-2xl">
+            <div className="flex items-center gap-2 text-xl font-semibold text-slate-700 dark:text-slate-200 sm:text-2xl">
               <span>{displayText}</span>
               <span className="h-2 w-2 animate-pulse rounded-full bg-sky-400"></span>
             </div>
-            <p className="max-w-xl text-base text-slate-300 sm:text-lg">
+            <p className="max-w-xl text-base text-slate-700 dark:text-slate-300 sm:text-lg">
               A multidisciplinary full stack developer and ML enthusiast blending clean engineering with meaningful design. I build production-grade AI
               products, lead teams with empathy, and turn complex ideas into beautiful, usable software.
             </p>
           </div>
 
-          <div className="grid gap-2 text-sm text-slate-300 sm:grid-cols-2">
-            <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-2 py-2 backdrop-blur">
-              <Mail className="h-5 w-5 text-sky-400"/>
+          <div className="grid gap-2 text-sm sm:grid-cols-2">
+            <div className="flex items-center gap-3 rounded-2xl border border-gray-200 dark:border-white/10 bg-white/80 dark:bg-white/5 px-3 py-3 backdrop-blur">
+              <Mail className="h-5 w-5 text-sky-500"/>
               <div>
-                <span className="block text-xs uppercase tracking-wide text-slate-400">Email</span>
-                <span className="font-medium text-slate-200">manmadhansiva2005@gmail.com</span>
+                <span className="block text-xs uppercase tracking-wide text-slate-500 dark:text-slate-400">
+                  Email
+                </span>
+                <span className="font-medium text-slate-800 dark:text-slate-200">
+                  manmadhansiva2005@gmail.com
+                </span>
               </div>
             </div>
-            <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-6 py-4 backdrop-blur">
-              <Phone className="h-5 w-5 text-sky-400" />
+            <div className="flex items-center gap-3 rounded-2xl border border-gray-200 dark:border-white/10 bg-white/80 dark:bg-white/5 px-6 py-4 backdrop-blur">
+              <Phone className="h-5 w-5 text-sky-500" />
               <div>
-                <span className="block text-xs uppercase tracking-wide text-slate-400">Mobile</span>
-                <span className="font-medium text-slate-200">+91 9363212045</span>
+                <span className="block text-xs uppercase tracking-wide text-slate-500 dark:text-slate-400">
+                  Mobile
+                </span>
+                <span className="font-medium text-slate-800 dark:text-slate-200">
+                  +91 9363212045
+                </span>
               </div>
             </div>
           </div>
@@ -99,8 +110,10 @@ const Hero: React.FC = () => {
               </span>
             </button>
 
-            <div className="flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-5 py-3 backdrop-blur">
-              <span className="text-sm font-medium text-slate-200">Connect with me</span>
+            <div className="flex items-center gap-3 rounded-full border border-gray-200 dark:border-white/10 bg-white/80 dark:bg-white/5 px-5 py-3 backdrop-blur">
+              <span className="text-sm font-medium text-slate-800 dark:text-slate-200">
+                Connect with me
+              </span>
               <div className="flex gap-2">
                 <a
                   href="https://github.com/SMANMATHAN"
@@ -125,20 +138,25 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
-        <div className="relative w-full lg:w-[50%]">
+        <div className="relative w-full lg:w-[50%] mt-7">
           <div className="absolute inset-4 rounded-[3rem] border border-white/20"></div>
           <div className="absolute -inset-6 rounded-[3.5rem] bg-gradient-to-r from-sky-500/20 via-purple-500/20 to-pink-500/20 blur-3xl"></div>
           <div className="relative overflow-hidden rounded-[2rem] border border-white/20 bg-white/10 backdrop-blur-2xl shadow-[0_30px_120px_-45px_rgba(56,189,248,0.55)]">
             <div className="relative p-6 sm:p-4">
               <div className="relative overflow-hidden rounded-[2.4rem] border border-white/20 bg-slate-900/60">
-                <div className="absolute inset-0 bg-gradient-to-br from-sky-500/20 via-transparent to-purple-500/10"></div>
+                {/* soft light at top and bottom of the image */}
+                <div className="pointer-events-none absolute inset-0">
+                  <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white/35 via-transparent to-transparent dark:from-sky-500/20" />
+                  <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white/35 via-transparent to-transparent dark:from-purple-500/25" />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-br from-sky-500/10 via-transparent to-purple-500/15"></div>
                 <img
                   src={DirectEyeContact}
                   alt="Portrait of Manmathan"
-                  className="h-[500px] w-full object-cover transition-transform duration-700 ease-out hover:scale-[1.04]"
+                  className="relative h-[500px] w-full object-cover transition-transform duration-700 ease-out hover:scale-[1.04]"
                 />
               </div>
-              <div className="mt-2 grid gap-4 md:grid-cols-[1.3fr_1fr]">
+              <div className="mt-5 grid gap-4 md:grid-cols-[1.3fr_1fr]">
               </div>
             </div>
           </div>

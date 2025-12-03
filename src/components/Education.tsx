@@ -20,58 +20,39 @@ interface EducationItem {
 const Education: React.FC = () => {
   const educationData: EducationItem[] = [
     {
-      degree: "B.Tech — Computer Science and Business Systems",
-      institution: "Bannari Amman Institute of Technology",
-      location: "Sathyamangalam, Tamil Nadu",
-      duration: "3rd Year (2023 - 2027 Batch)",
-      score: "CGPA: 7.5/10",
-      color: "from-blue-600 to-purple-600",
-      image: null,
-      coursework: [
-        "Data Structures & Algorithms",
-        "Database Management Systems",
-        "Web Development",
-        "Machine Learning",
-        "Software Engineering",
-        "Business Analytics",
-      ],
-      achievements: [
-        "Consistent high academic performance with 7.5 CGPA",
-        "Active participation in technical clubs and events",
-        "Regular contributor to college technical forums",
-      ],
+      degree: "10th Grade — Secondary School",
+      institution: "Government High School",
+      location: "P. Karattuppalayam, Erode, Tamil Nadu",
+      duration: "2020 - 2021",
+      score: " All Pass",
+      color: "from-pink-500 to-rose-600",
+      image: undefined,
     },
     {
       degree: "12th Grade — Higher Secondary",
-      institution: "Government Higher Secondary School, Kurumandhur",
+      institution: "Government Higher Secondary School",
+      location: "Kurumandhur, Erode, Tamil Nadu",
       duration: "2021 – 2023",
       score: "80%",
       color: "from-green-500 to-emerald-600",
       image: undefined,
-      achievements: [
-        "Excelled in Mathematics & Computer Science stream",
-        "Participated in district-level Chess competitions",
-        "Discipline Student and leadership roles in school clubs",
-      ],
     },
     {
-      degree: "10th Grade — Secondary School",
-      institution: "Government High School, P. Karattuppalayam",
-      duration: "2020 – 2021",
-      score: "0% (All Passed)",
-      color: "from-pink-500 to-rose-600",
-      image: undefined,
-      achievements: [
-        "Strong foundation in Science & Mathematics",
-        "Active involvement in extracurricular activities",
-      ],
+      degree: "B.Tech — Computer Science and Business Systems",
+      institution: "Bannari Amman Institute of Technology",
+      location: "Sathyamangalam, Erode, Tamil Nadu",
+      duration: "2023 - 2027",
+      score: "CGPA: 7.5/10",
+      color: "from-blue-600 to-purple-600",
+      image: null,
     },
+
   ];
 
   return (
     <section
       id="education"
-      className="py-28 px-4 relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950"
+      className="py-28 px-4 relative overflow-hidden bg-gradient-to-br from-slate-100 via-slate-50 to-slate-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950"
     >
       <style>{`
         .professional-glow {
@@ -96,11 +77,8 @@ const Education: React.FC = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Professional Title */}
         <div className="text-center mb-20">
-          <div className="inline-block mb-4">
-            <Building2 className="w-12 h-12 text-blue-400 mx-auto mb-4" />
-          </div>
           <h2
-            className="text-5xl md:text-6xl font-bold text-white mb-6 tracking-tight"
+            className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 tracking-tight"
             style={{
               textShadow: "0 4px 20px rgba(0,0,0,0.3)",
               letterSpacing: "-0.02em",
@@ -108,8 +86,8 @@ const Education: React.FC = () => {
           >
             Academic Background
           </h2>
-          <p className="text-xl text-slate-400 max-w-2xl mx-auto font-light">
-            Educational qualifications and academic achievements
+          <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto font-light">
+            Educational qualifications
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mt-6 rounded-full"></div>
         </div>
@@ -154,12 +132,20 @@ const Education: React.FC = () => {
                   </div>
                 )}
 
-                {/* Institution & Duration */}
+                {/* Institution, Location & Duration */}
                 <div className="space-y-3 mb-6 text-slate-300">
                   {edu.institution && (
                     <div className="flex items-start">
+                      <Building2 className="w-4 h-4 mr-2 text-slate-400 mt-1 flex-shrink-0" />
+                      <span className="font-medium text-sm leading-relaxed">
+                        {edu.institution}
+                      </span>
+                    </div>
+                  )}
+                  {edu.location && (
+                    <div className="flex items-start">
                       <MapPin className="w-4 h-4 mr-2 text-slate-400 mt-1 flex-shrink-0" />
-                      <span className="font-medium text-sm leading-relaxed">{edu.institution}</span>
+                      <span className="text-sm leading-relaxed">{edu.location}</span>
                     </div>
                   )}
                   {edu.duration && (

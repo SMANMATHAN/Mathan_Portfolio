@@ -55,7 +55,7 @@ const About: React.FC = () => {
               <div className="text-sm text-gray-600 dark:text-gray-400">CGPA</div>
             </div>
             <div className="flex-1 text-center border border-lime-400 dark:border-cyan-400 rounded-lg p-4 hover:shadow-md transition-all">
-              <div className="text-2xl font-bold text-lime-600 dark:text-cyan-400">6+</div>
+              <div className="text-2xl font-bold text-lime-600 dark:text-cyan-400">3+</div>
               <div className="text-sm text-gray-600 dark:text-gray-400">Months Experience</div>
             </div>
           </div>

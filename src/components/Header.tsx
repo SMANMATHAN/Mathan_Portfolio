@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Sun, Moon } from 'lucide-react';
+import MsLogo from '../assests/images/MSLogo-artguru.png';
 
 interface HeaderProps {
   theme: 'light' | 'dark';
@@ -51,12 +52,22 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <div className="font-bold text-xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            MANMATHAN S
-          </div>
+        <div className="flex items-center justify-between h-20">
+          <button
+            type="button"
+            onClick={() => document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })}
+            className="group inline-flex items-center"
+          >
+            <div className="h-[70px] w-[70px] rounded-2xl overflow-hidden bg-slate-900 flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow border-[1.5px] border-gray-300 dark:border-gray-600">
+              <img
+                src={MsLogo}
+                alt="MS logo"
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </button>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">

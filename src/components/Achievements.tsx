@@ -62,8 +62,8 @@ const Achievements: React.FC = () => {
     {
       icon: <Trophy className="w-8 h-8" />,
       title: 'Smart India Hackathon 2024',
-      subtitle: 'Winner 🏆',
-      description: 'Won the prestigious national-level hackathon representing innovation in technology solutions',
+      subtitle: 'Participant 🏆',
+      description: 'Runner the prestigious national-level hackathon representing innovation in technology solutions',
       highlight: true
     },
     {
@@ -73,20 +73,13 @@ const Achievements: React.FC = () => {
       description: 'First place in inter-collegiate innovation competition for creative problem-solving',
       highlight: true
     },
-    {
-      icon: <Star className="w-8 h-8" />,
-      title: 'Multiple Hackathon Victories',
-      subtitle: '3× Hackathon Winner 👑',
-      description: 'Consistent performance across multiple competitive programming and innovation events',
-      highlight: false
-    }
   ];
 
   const stats = [
     { number: 3, suffix: '', label: 'Hackathons Won', icon: <Trophy className="w-6 h-6" /> },
-    { number: 6, suffix: '+', label: 'Months Experience', icon: <Target className="w-6 h-6" /> },
-    { number: 9, suffix: '.0', label: 'CGPA', icon: <Star className="w-6 h-6" /> },
-    { number: 10, suffix: '+', label: 'Projects Completed', icon: <Zap className="w-6 h-6" /> }
+    { number: 3, suffix: '+', label: 'Months Experience', icon: <Target className="w-6 h-6" /> },
+    { number: 7.5, suffix: '.5', label: 'CGPA', icon: <Star className="w-6 h-6" /> },
+    { number: 3, suffix: '+', label: 'Projects Completed', icon: <Zap className="w-6 h-6" /> }
   ];
 
   return (
@@ -107,7 +100,7 @@ const Achievements: React.FC = () => {
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="text-center p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="text-center p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 dark:border-gray-700"
             >
               <div className="text-blue-600 dark:text-blue-400 mb-3 flex justify-center">
                 {stat.icon}
@@ -123,14 +116,14 @@ const Achievements: React.FC = () => {
         </div>
 
         {/* Achievement Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center justify-center">
           {achievements.map((achievement, index) => (
             <div
               key={index}
-              className={`relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 ${
+              className={`relative w-full max-w-sm overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 ${
                 achievement.highlight
-                  ? 'bg-gradient-to-br from-blue-500 to-purple-600 text-white'
-                  : 'bg-white dark:bg-gray-800'
+                  ? 'bg-gradient-to-br from-blue-500 to-purple-600 text-white border border-blue-400/60'
+                  : 'bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700'
               }`}
             >
               {achievement.highlight && (
@@ -172,7 +165,7 @@ const Achievements: React.FC = () => {
 
         {/* Additional Recognition */}
         <div className="mt-16 text-center">
-          <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
+          <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg border border-gray-200 dark:border-gray-700">
             <div className="flex items-center justify-center space-x-3 mb-4">
               <Users className="w-8 h-8 text-blue-600 dark:text-blue-400" />
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white">

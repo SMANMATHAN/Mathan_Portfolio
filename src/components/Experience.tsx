@@ -18,21 +18,6 @@ const Experience: React.FC = () => {
       ],
       technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Git', 'AWS']
     },
-    {
-      company: 'Brandrur',
-      position: 'Founder / Freelancer',
-      duration: 'Ongoing',
-      location: 'Independent',
-      type: 'Entrepreneurship',
-      description: 'Founded and managing a freelance business, providing web development and digital solutions to various clients.',
-      achievements: [
-        'Successfully launched and managed multiple client projects',
-        'Built strong client relationships and delivered projects on time',
-        'Developed expertise in project management and client communication',
-        'Created innovative solutions tailored to specific business needs'
-      ],
-      technologies: ['Full Stack Development', 'Project Management', 'Client Relations', 'Business Development']
-    }
   ];
 
   return (
@@ -52,7 +37,7 @@ const Experience: React.FC = () => {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="relative bg-gradient-to-r from-white to-blue-50 dark:from-gray-800 dark:to-blue-900/20 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+              className="relative bg-gradient-to-r from-white to-blue-50 dark:from-gray-800 dark:to-blue-900/20 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-200 dark:border-gray-700"
             >
               {/* Timeline connector for desktop */}
               {index < experiences.length - 1 && (
