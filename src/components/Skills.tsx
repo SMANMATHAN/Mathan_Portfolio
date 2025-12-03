@@ -129,28 +129,6 @@ const Skills: React.FC = () => {
                 ))}
               </div>
             </div>
-
-            {/* Cloud */}
-            <div className="backdrop-blur-lg bg-gradient-to-br from-green-50/80 to-blue-50/80 dark:from-green-900/30 dark:to-blue-900/30 p-8 rounded-2xl border border-gray-200/40 dark:border-gray-700/40 shadow-md hover:shadow-xl transition">
-              <div className="flex items-center space-x-3 mb-6">
-                <Cloud className="w-6 h-6 text-green-600 dark:text-green-400" />
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                  Cloud & Deployment
-                </h3>
-              </div>
-              <div className="flex flex-wrap gap-3">
-                {["AWS (Basics)", "Vercel", "Netlify", "Docker (Learning)"].map(
-                  (tech, idx) => (
-                    <span
-                      key={idx}
-                      className="px-4 py-2 text-sm font-medium rounded-full bg-green-100 dark:bg-green-800 text-green-700 dark:text-green-300 shadow-sm hover:shadow-md transition"
-                    >
-                      {tech}
-                    </span>
-                  )
-                )}
-              </div>
-            </div>
           </div>
         </div>
       </div>

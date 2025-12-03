@@ -38,11 +38,10 @@ const About: React.FC = () => {
           </h2>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
             I'm <span className="font-semibold">MANMATHAN S</span>, a 3rd-year Computer Science and Business Systems student at
-            Bannari Amman Institute of Technology, maintaining a CGPA of <span className="text-lime-500 dark:text-cyan-400">9.0/10</span>.
+            Bannari Amman Institute of Technology, maintaining a CGPA of <span className="text-lime-500 dark:text-cyan-400">7.5/10</span>.
           </p>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-            As the Founder of <span className="font-semibold">Brandrur</span>, I’ve gained hands-on experience in freelancing and
-            building impactful digital solutions. I’ve also completed a 6-month internship at Crayon D Company, contributing to
+          <span className="font-semibold"></span> Iam completed a 6-month internship at Crayon D Company, contributing to
             full-stack projects.
           </p>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -52,7 +51,7 @@ const About: React.FC = () => {
 
           <div className="flex gap-6 mt-8">
             <div className="flex-1 text-center border border-lime-400 dark:border-cyan-400 rounded-lg p-4 hover:shadow-md transition-all">
-              <div className="text-2xl font-bold text-lime-600 dark:text-cyan-400">9.0</div>
+              <div className="text-2xl font-bold text-lime-600 dark:text-cyan-400">7.5</div>
               <div className="text-sm text-gray-600 dark:text-gray-400">CGPA</div>
             </div>
             <div className="flex-1 text-center border border-lime-400 dark:border-cyan-400 rounded-lg p-4 hover:shadow-md transition-all">

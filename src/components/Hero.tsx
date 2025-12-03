@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FileText, Github, Linkedin, Mail, Phone } from 'lucide-react';
-import MyownImage from '../assests/images/My_Own1.jpg';
+import DirectEyeContact from '../assests/images/EyeContactOnLap.png';
 
 
 const Hero: React.FC = () => {
@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 text-white">
+     <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 text-white">
       <div className="absolute inset-0">
         <div className="absolute -top-40 -left-32 h-64 w-64 rounded-full bg-blue-500/20 blur-3xl"></div>
         <div className="absolute top-1/3 right-10 h-72 w-72 rounded-full bg-purple-500/20 blur-3xl"></div>
@@ -70,9 +70,9 @@ const Hero: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid gap-4 text-sm text-slate-300 sm:grid-cols-2">
-            <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-6 py-4 backdrop-blur">
-              <Mail className="h-10 w-10 text-sky-400"/>
+          <div className="grid gap-2 text-sm text-slate-300 sm:grid-cols-2">
+            <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-2 py-2 backdrop-blur">
+              <Mail className="h-5 w-5 text-sky-400"/>
               <div>
                 <span className="block text-xs uppercase tracking-wide text-slate-400">Email</span>
                 <span className="font-medium text-slate-200">manmadhansiva2005@gmail.com</span>
@@ -95,7 +95,7 @@ const Hero: React.FC = () => {
             >
               <span className="flex items-center gap-3">
                 <FileText className="h-5 w-5" />
-                <span>Open Resume</span>
+                <span>Click to View Resume</span>
               </span>
             </button>
 
@@ -125,35 +125,20 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
-        <div className="relative w-full lg:w-[44%]">
+        <div className="relative w-full lg:w-[50%]">
           <div className="absolute inset-4 rounded-[3rem] border border-white/20"></div>
           <div className="absolute -inset-6 rounded-[3.5rem] bg-gradient-to-r from-sky-500/20 via-purple-500/20 to-pink-500/20 blur-3xl"></div>
-          <div className="relative overflow-hidden rounded-[3rem] border border-white/20 bg-white/10 backdrop-blur-2xl shadow-[0_30px_120px_-45px_rgba(56,189,248,0.55)]">
-            <div className="absolute top-6 right-6 flex gap-2">
-              <span className="h-3 w-3 rounded-full bg-sky-400"></span>
-              <span className="h-3 w-3 rounded-full bg-emerald-400"></span>
-              <span className="h-3 w-3 rounded-full bg-pink-400"></span>
-            </div>
-            <div className="relative p-6 sm:p-8">
+          <div className="relative overflow-hidden rounded-[2rem] border border-white/20 bg-white/10 backdrop-blur-2xl shadow-[0_30px_120px_-45px_rgba(56,189,248,0.55)]">
+            <div className="relative p-6 sm:p-4">
               <div className="relative overflow-hidden rounded-[2.4rem] border border-white/20 bg-slate-900/60">
                 <div className="absolute inset-0 bg-gradient-to-br from-sky-500/20 via-transparent to-purple-500/10"></div>
                 <img
-                  src={MyownImage}
+                  src={DirectEyeContact}
                   alt="Portrait of Manmathan"
-                  className="h-[360px] w-full object-cover transition-transform duration-700 ease-out hover:scale-[1.04]"
+                  className="h-[500px] w-full object-cover transition-transform duration-700 ease-out hover:scale-[1.04]"
                 />
               </div>
-              <div className="mt-6 grid gap-4 md:grid-cols-[1.3fr_1fr]">
-                <div className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 backdrop-blur">
-                  <p className="text-xs uppercase tracking-[0.35em] text-slate-400">Experience</p>
-                  <p className="mt-2 text-lg font-semibold text-white">3× Hackathon Winner</p>
-                  <p className="mt-1 text-sm text-slate-300">Focused on AI, SaaS, and immersive web experiences.</p>
-                </div>
-                <div className="rounded-2xl bg-gradient-to-br from-sky-500 via-purple-500 to-pink-500 px-5 py-4 text-white shadow-lg shadow-purple-500/40">
-                  <p className="text-xs uppercase tracking-[0.35em] opacity-90">Projects</p>
-                  <p className="mt-2 text-3xl font-bold">25+</p>
-                  <p className="mt-1 text-sm opacity-90">Products shipped worldwide.</p>
-                </div>
+              <div className="mt-2 grid gap-4 md:grid-cols-[1.3fr_1fr]">
               </div>
             </div>
           </div>
