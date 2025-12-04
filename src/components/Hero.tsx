@@ -41,7 +41,9 @@ const Hero: React.FC = () => {
 
   const handleViewResume = () => {
     if (typeof window !== 'undefined') {
-      window.open('/resume.pdf', '_blank', 'noopener,noreferrer');
+      window.open(
+        'https://massive-sapphire-ynzoezhotu.edgeone.dev/'
+      );
     }
   };
 

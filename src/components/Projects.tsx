@@ -44,14 +44,14 @@ const Projects: React.FC = () => {
     },
     {
       id: 3,
-      title: 'AI Image Generator',
-      description: 'Creative AI-driven image generation tool with custom prompts',
+      title: 'Train Traffic Flow with AI',
+      description: 'Maximizing Section Throughput Using AI-Powered Precise Train Traffic Control',
       longDescription: 'An innovative image generation platform powered by advanced AI models. Users can create unique images from text descriptions with various styling options and customization features.',
-      tech: ['Python', 'Stable Diffusion', 'FastAPI', 'React', 'AWS'],
+      tech: ['ReactJS', 'Typescript', 'FastAPI', 'React', 'AWS'],
       category: 'ai',
-      image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800',
-      github: '#',
-      demo: '#',
+      image: 'https://lh7-rt.googleusercontent.com/docsz/AD_4nXf-HITNYwo1PK09RfF2xo07s570GOSY5kVlzcLR6FQrZcJJoocxMgsoCoR5uFrKY43YcjrJl0V7T4qV5ZkLmJvySoEHy4UDEWDC3HnsQ0pWp3rbNrb3yEtYOBzA9Cfy2_iOpvIT3kuTods8JA0sYQ?key=Fs1z_K8FIehwPsc3nthqEl4q',
+      github: 'https://github.com/SMANMATHAN/rail-dashboard/tree/main/frontend%20simulation',
+      demo: 'https://rail-dashboard.vercel.app/',
       icon: <Image className="w-6 h-6" />
     }
   ];
