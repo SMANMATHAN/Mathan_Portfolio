@@ -26,8 +26,8 @@ const Projects: React.FC = () => {
       tech: ['Python', 'React', 'Node.js', 'OpenAI API', 'MongoDB'],
       category: 'ai',
       image: 'https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&w=800',
-      github: '#',
-      demo: '#',
+      github: 'https://github.com/SMANMATHAN/AI_RESUME_BUILDER',
+      demo: 'https://ai-resume-builder-rho-ochre.vercel.app/',
       icon: <Brain className="w-6 h-6" />
     },
     {
