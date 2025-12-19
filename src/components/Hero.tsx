@@ -42,10 +42,10 @@ const Hero: React.FC = () => {
   const handleViewResume = () => {
     if (typeof window !== 'undefined') {
       window.open(
-        'https://massive-sapphire-ynzoezhotu.edgeone.dev/'
+        'https://drive.google.com/file/d/1sD89LhULPxHyB2FoTNJWk7Dbnk6Itbb7/view?usp=drive_link'
       );
     }
-  };
+  };  
 
   return (
     <section

@@ -72,8 +72,8 @@ const About: React.FC = () => {
       </div>
       <div className="relative max-w-7xl mx-auto">
         {/* Header - Top Center */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-2 tracking-tight">
+        <div className="text-center mb-10">
+          <h2 className="text-4xl font-bold mb-4 tracking-tight">
             About <span className="text-lime-500 dark:text-cyan-400">Me</span>
           </h2>
         </div>
