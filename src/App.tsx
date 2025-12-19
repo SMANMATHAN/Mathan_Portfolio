@@ -1,15 +1,16 @@
 import { useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Education from './components/Education';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Experience from './components/Experience';
-import Achievements from './components/Achievements';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import { useTheme } from './hooks/useTheme';
+import Home from './pages/Home';
+import AboutPage from './pages/AboutPage';
+import EducationPage from './pages/EducationPage';
+import SkillsPage from './pages/SkillsPage';
+import ProjectsPage from './pages/ProjectsPage';
+import ExperiencePage from './pages/ExperiencePage';
+import AchievementsPage from './pages/AchievementsPage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   const { theme, toggleTheme } = useTheme();
@@ -32,7 +33,7 @@ function App() {
       });
     }, observerOptions);
 
-    // Observe all sections
+    // Observe visible sections
     const sections = document.querySelectorAll('section');
     sections.forEach((section) => {
       observer.observe(section);
@@ -46,20 +47,22 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
-      <Header theme={theme} toggleTheme={toggleTheme} />
-      <main>
-        <Hero />
-        <About />
-        <Education />
-        <Skills />
-        <Projects />
-        <Experience />
-        <Achievements />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <ScrollToTop />
+      <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
+        <Header theme={theme} toggleTheme={toggleTheme} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/education" element={<EducationPage />} />
+          <Route path="/skills" element={<SkillsPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/experience" element={<ExperiencePage />} />
+          <Route path="/achievements" element={<AchievementsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
