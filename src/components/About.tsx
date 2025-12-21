@@ -120,8 +120,12 @@ const About: React.FC = () => {
             </div>
 
             {/* Social Icons */}
-            <div className="pt-8 flex justify-center md:justify-start">
-              <div className="flex flex-wrap gap-4 p-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-white/80 dark:bg-gray-800/50 backdrop-blur-sm">
+ <div className="pt-4">
+              <h4 className="text-sm font-semibold text-gray-300 mb-3">
+                Connect with Me
+              </h4>
+
+              <div className="flex flex-wrap justify-center md:justify-start gap-4">
                 {socialLinks.map((social) => {
                   const IconComponent = social.icon;
                   return (
@@ -130,10 +134,17 @@ const About: React.FC = () => {
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`${social.color} p-2 rounded-lg border border-gray-300 dark:border-gray-600 hover:scale-110 transition`}
-                      aria-label={`Visit ${social.name}`}
+                      className="flex flex-col items-center gap-1 group"
+                      aria-label={social.name}
                     >
-                      <IconComponent className="w-7 h-7 sm:w-8 sm:h-8" />
+                      <div
+                        className={`${social.color} p-3 rounded-lg border border-gray-700 group-hover:scale-110 transition`}
+                      >
+                        <IconComponent className="w-5 h-5" />
+                      </div>
+                      <span className="text-xs text-gray-400 group-hover:text-white">
+                        {social.name}
+                      </span>
                     </a>
                   );
                 })}
