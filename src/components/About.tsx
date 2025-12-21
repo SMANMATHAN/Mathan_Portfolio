@@ -41,13 +41,13 @@ const About: React.FC = () => {
     },
     {
       name: 'LeetCode',
-      url: 'https://leetcode.com/u/SMANMATHAN/',
+      url: 'https://leetcode.com/u/06M05A20N05N/',
       icon: SiLeetcode,
       color: 'text-orange-500 hover:text-orange-600 dark:text-orange-400 dark:hover:text-orange-300',
     },
     {
       name: 'CodeChef',
-      url: 'https://www.codechef.com/users/smanmathan',
+      url: 'https://www.codechef.com/users/troop_bears_54',
       icon: SiCodechef,
       color: 'text-yellow-600 hover:text-yellow-700 dark:text-yellow-400 dark:hover:text-yellow-300',
     },

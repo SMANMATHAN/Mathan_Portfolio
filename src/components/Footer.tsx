@@ -23,13 +23,13 @@ const Footer: React.FC = () => {
     },
     {
       name: 'LeetCode',
-      url: 'https://leetcode.com/u/SMANMATHAN/',
+      url: 'https://leetcode.com/u/06M05A20N05N/',
       icon: SiLeetcode,
       color: 'text-orange-400 hover:text-orange-500'
     },
     {
       name: 'CodeChef',
-      url: 'https://www.codechef.com/users/smanmathan',
+      url: 'https://www.codechef.com/users/troop_bears_54',
       icon: SiCodechef,
       color: 'text-yellow-400 hover:text-yellow-500'
     },
