@@ -21,7 +21,7 @@ const Experience: React.FC = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 px-4 bg-white dark:bg-gray-900">
+    <section id="experience" className="py-20 px-4 bg-gradient-to-br from-slate-100 via-slate-50 to-slate-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">

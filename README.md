@@ -33,7 +33,7 @@ A modern, responsive portfolio website showcasing the skills and achievements of
 
 ## 🎯 Key Highlights
 
-- **Academic Excellence**: 9.0/10 CGPA in Computer Science
+- **Academic Excellence**: 7.5/10 CGPA in Computer Science
 - **Industry Experience**: 6-month internship at Crayon D Company
 - **Entrepreneurial**: Founder of Brandrur
 - **Competition Winner**: 3× Hackathon winner including Smart India Hackathon 2024
@@ -98,7 +98,7 @@ The built files will be in the `dist` directory, ready for deployment.
 - Smart India Hackathon 2024 Winner
 - Inter-College Ideathon Winner  
 - 3× Hackathon Winner
-- CGPA: 9.0/10
+- CGPA: 7.5/10
 - 6+ Months Industry Experience
 
 ## 📄 License

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Brain, Trophy, Users, Linkedin, Github, Instagram } from 'lucide-react';
+import { Code, Brain, Trophy, Users, Linkedin, Github } from 'lucide-react';
 import { SiLeetcode, SiCodechef } from 'react-icons/si';
 
 const About: React.FC = () => {
@@ -31,84 +31,97 @@ const About: React.FC = () => {
       name: 'LinkedIn',
       url: 'https://www.linkedin.com/in/manmathan-s-2282ab2a0/',
       icon: Linkedin,
-      color: 'text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300'
+      color: 'text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300',
     },
     {
       name: 'GitHub',
       url: 'https://github.com/SMANMATHAN',
       icon: Github,
-      color: 'text-gray-900 hover:text-gray-700 dark:text-white dark:hover:text-gray-300'
+      color: 'text-gray-900 hover:text-gray-700 dark:text-white dark:hover:text-gray-300',
     },
     {
       name: 'LeetCode',
       url: 'https://leetcode.com/u/SMANMATHAN/',
       icon: SiLeetcode,
-      color: 'text-orange-500 hover:text-orange-600 dark:text-orange-400 dark:hover:text-orange-300'
+      color: 'text-orange-500 hover:text-orange-600 dark:text-orange-400 dark:hover:text-orange-300',
     },
     {
       name: 'CodeChef',
       url: 'https://www.codechef.com/users/smanmathan',
       icon: SiCodechef,
-      color: 'text-yellow-600 hover:text-yellow-700 dark:text-yellow-400 dark:hover:text-yellow-300'
+      color: 'text-yellow-600 hover:text-yellow-700 dark:text-yellow-400 dark:hover:text-yellow-300',
     },
-    {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/manmathan_6305/',
-      icon: Instagram,
-      color: 'text-pink-600 hover:text-pink-700 dark:text-pink-400 dark:hover:text-pink-300'
-    }
   ];
 
   return (
     <section
       id="about"
-      className="relative overflow-hidden min-h-screen w-full py-20 px-6 font-sans bg-gradient-to-br from-slate-100 via-slate-50 to-slate-100 text-gray-900 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900 dark:text-white transition-colors duration-500"
+      className="relative overflow-hidden py-20 px-4 bg-gradient-to-br from-slate-100 via-slate-50 to-slate-100 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900 text-gray-900 dark:text-white transition-colors duration-500"
     >
+      {/* Background Effects */}
       <div className="absolute inset-0">
-        <div className="absolute -top-40 -left-32 h-64 w-64 rounded-full bg-blue-500/20 blur-3xl"></div>
-        <div className="absolute top-1/3 right-10 h-72 w-72 rounded-full bg-purple-500/20 blur-3xl"></div>
-        <div className="absolute bottom-20 left-1/4 h-56 w-56 rounded-full bg-sky-500/20 blur-3xl"></div>
-        <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(148,163,184,0.12) 1px, transparent 0)' }}></div>
+        <div className="absolute -top-40 -left-32 h-64 w-64 rounded-full bg-blue-500/20 blur-3xl" />
+        <div className="absolute top-1/3 right-10 h-72 w-72 rounded-full bg-purple-500/20 blur-3xl" />
+        <div className="absolute bottom-20 left-1/4 h-56 w-56 rounded-full bg-sky-500/20 blur-3xl" />
+        <div
+          className="absolute inset-0 opacity-30"
+          style={{
+            backgroundImage:
+              'radial-gradient(circle at 1px 1px, rgba(148,163,184,0.12) 1px, transparent 0)',
+          }}
+        />
       </div>
+
       <div className="relative max-w-7xl mx-auto">
-        {/* Header - Top Center */}
-        <div className="text-center mb-10">
-          <h2 className="text-4xl font-bold mb-4 tracking-tight">
-            About <span className="text-lime-500 dark:text-cyan-400">Me</span>
-          </h2>
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold mb-4">About Me</h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full" />
+          <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
+            Learn more about my background and expertise
+          </p>
         </div>
 
-        {/* Content - Centered */}
-        <div className="grid md:grid-cols-2 gap-16 items-center justify-items-center">
-          {/* Left Section — Text */}
-          <div className="space-y-6 text-center md:text-left w-full">
+        {/* Main Content */}
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+          {/* Left Content */}
+          <div className="space-y-6 text-center md:text-left">
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              I'm <span className="font-semibold">MANMATHAN S</span>, a 3rd-year Computer Science and Business Systems student at
-              Bannari Amman Institute of Technology, maintaining a CGPA of <span className="text-lime-500 dark:text-cyan-400">7.5/10</span>.
-            </p>
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              <span className="font-semibold"></span> Iam completed a 6-month internship at Crayon D Company, contributing to
-              full-stack projects.
-            </p>
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              I'm passionate about leveraging technology to solve real-world problems and constantly push the boundaries of
-              innovation.
+              I'm <span className="font-semibold">MANMATHAN S</span>, a 3rd-year Computer Science and
+              Business Systems student at Bannari Amman Institute of Technology,
+              maintaining a CGPA of{' '}
+              <span className="font-semibold text-blue-600 dark:text-blue-400">
+                7.5/10
+              </span>.
             </p>
 
-            <div className="flex gap-6 mt-8 justify-center md:justify-start">
-              <div className="flex-1 text-center border border-lime-400 dark:border-cyan-400 rounded-lg p-4 hover:shadow-md transition-all">
-                <div className="text-2xl font-bold text-lime-600 dark:text-cyan-400">7.5</div>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+              I completed a 6-month internship at Crayon D Company, contributing to
+              full-stack development projects.
+            </p>
+
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+              I am passionate about leveraging technology to solve real-world problems
+              and continuously improving my technical skills.
+            </p>
+
+            {/* Stats */}
+            <div className="flex flex-wrap gap-6 justify-center md:justify-start pt-4">
+              <div className="flex-1 min-w-[140px] text-center border border-blue-300 dark:border-blue-600 rounded-lg p-4 bg-blue-50 dark:bg-blue-900/20">
+                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">7.5</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">CGPA</div>
               </div>
-              <div className="flex-1 text-center border border-lime-400 dark:border-cyan-400 rounded-lg p-4 hover:shadow-md transition-all">
-                <div className="text-2xl font-bold text-lime-600 dark:text-cyan-400">3+</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">Months Experience</div>
+              <div className="flex-1 min-w-[140px] text-center border border-blue-300 dark:border-blue-600 rounded-lg p-4 bg-blue-50 dark:bg-blue-900/20">
+                <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">3+</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">
+                  Months Experience
+                </div>
               </div>
             </div>
 
             {/* Social Icons */}
-            <div className="mt-10 flex gap-4 justify-center md:justify-start">
-              <div className="flex gap-6 p-5 rounded-xl border border-gray-200 dark:border-gray-700 bg-white/80 dark:bg-gray-800/50 backdrop-blur-sm shadow-sm">
+            <div className="pt-8 flex justify-center md:justify-start">
+              <div className="flex flex-wrap gap-4 p-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-white/80 dark:bg-gray-800/50 backdrop-blur-sm">
                 {socialLinks.map((social) => {
                   const IconComponent = social.icon;
                   return (
@@ -117,10 +130,10 @@ const About: React.FC = () => {
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`${social.color} transition-all duration-300 hover:scale-110 transform p-2 rounded-lg border border-gray-300 dark:border-gray-600`}
-                      aria-label={`Visit ${social.name} profile`}
+                      className={`${social.color} p-2 rounded-lg border border-gray-300 dark:border-gray-600 hover:scale-110 transition`}
+                      aria-label={`Visit ${social.name}`}
                     >
-                      <IconComponent className="w-8 h-8" />
+                      <IconComponent className="w-7 h-7 sm:w-8 sm:h-8" />
                     </a>
                   );
                 })}
@@ -128,16 +141,22 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Section — Highlight Cards */}
-          <div className="relative grid sm:grid-cols-2 gap-6 p-6 border border-gray-200 dark:border-gray-700 rounded-2xl bg-gray-50/40 dark:bg-gray-900/30 backdrop-blur-sm w-full">
+          {/* Right Content */}
+          <div className="grid sm:grid-cols-2 gap-6 p-6 border border-gray-200 dark:border-gray-700 rounded-xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm">
             {highlights.map((highlight, index) => (
               <div
                 key={index}
-                className="p-6 rounded-xl bg-white/70 dark:bg-[#111111]/60 border border-lime-300 dark:border-cyan-600 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all"
+                className="p-6 rounded-xl bg-white/70 dark:bg-gray-800/60 border border-gray-200 dark:border-gray-700 hover:shadow-lg hover:-translate-y-1 transition"
               >
-                <div className="text-lime-600 dark:text-cyan-400 mb-3">{highlight.icon}</div>
-                <h3 className="text-lg font-semibold mb-1">{highlight.title}</h3>
-                <p className="text-sm text-gray-700 dark:text-gray-400">{highlight.description}</p>
+                <div className="text-blue-600 dark:text-blue-400 mb-3">
+                  {highlight.icon}
+                </div>
+                <h3 className="text-lg font-semibold mb-1">
+                  {highlight.title}
+                </h3>
+                <p className="text-sm text-gray-700 dark:text-gray-400">
+                  {highlight.description}
+                </p>
               </div>
             ))}
           </div>

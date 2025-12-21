@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className="relative overflow-hidden bg-gradient-to-br from-slate-100 via-slate-50 to-slate-100 text-gray-900 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900 dark:text-white"
+      className="relative overflow-hidden bg-gradient-to-br from-slate-100 via-slate-50 to-slate-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 text-gray-900 dark:text-white"
     >
       <div className="absolute inset-0">
         <div className="absolute -top-40 -left-32 h-64 w-64 rounded-full bg-blue-500/20 blur-3xl"></div>

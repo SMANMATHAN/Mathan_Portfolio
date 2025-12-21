@@ -34,15 +34,15 @@ const Skills: React.FC = () => {
   const rightCategories = skillCategories.slice(3);
 
   return (
-    <section id="skills" className="py-20 px-6 bg-gray-50 dark:bg-gray-900">
-      <div className="max-w-6xl mx-auto">
+    <section id="skills" className="py-20 px-4 bg-gray-50 dark:bg-gray-900">
+      <div className="max-w-7xl mx-auto">
         {/* Title */}
-        <div className="text-center mb-14">
-          <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Technical Skills
           </h2>
-          <div className="w-28 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mt-3 rounded-full"></div>
-          <p className="mt-5 text-lg text-gray-600 dark:text-gray-400">
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+          <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
             Technologies and tools I work with
           </p>
         </div>

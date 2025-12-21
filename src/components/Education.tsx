@@ -52,7 +52,7 @@ const Education: React.FC = () => {
   return (
     <section
       id="education"
-      className="py-28 px-4 relative overflow-hidden bg-gradient-to-br from-slate-100 via-slate-50 to-slate-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950"
+      className="py-20 px-4 relative overflow-hidden bg-gradient-to-br from-slate-100 via-slate-50 to-slate-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950"
     >
       <style>{`
         .professional-glow {
@@ -76,24 +76,18 @@ const Education: React.FC = () => {
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Professional Title */}
-        <div className="text-center mb-20">
-          <h2
-            className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 tracking-tight"
-            style={{
-              textShadow: "0 4px 20px rgba(0,0,0,0.3)",
-              letterSpacing: "-0.02em",
-            }}
-          >
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Academic Background
           </h2>
-          <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto font-light">
-            Educational qualifications
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+          <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
+            Educational qualifications and achievements
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mt-6 rounded-full"></div>
         </div>
 
         {/* Professional Cards Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {educationData.map((edu, idx) => (
             <div
               key={idx}
